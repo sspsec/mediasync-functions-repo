@@ -1,7 +1,7 @@
 const { app } = require('@azure/functions');
 const { BlobServiceClient } = require('@azure/storage-blob');
 const { CosmosClient } = require('@azure/cosmos');
-
+// CI/CD test comment
 app.http('upload', {
   methods: ['POST'],
   authLevel: 'anonymous',
