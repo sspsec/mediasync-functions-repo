@@ -12,7 +12,6 @@ jobs:
         node-version: '18'
     - run: npm install
     - run: npm run build --if-present
-    - run: echo "Publish Profile: ${{ secrets.AZURE_FUNCTIONS_PUBLISH_PROFILE }}"
     - uses: Azure/functions-action@v1
       with:
         app-name: mediasync-functions
